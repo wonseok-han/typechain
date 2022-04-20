@@ -1,3 +1,15 @@
+class Human {
+  public name: string;
+  public age: number;
+  public gender: string;
+
+  constructor(name: string, age: number, gender: string) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+  }
+}
+
 interface PersonProps {
   name: string;
   age: number;
@@ -28,6 +40,8 @@ const giveMeObject = ({ name, age, gender }: PersonProps) => {
 };
 
 // sayHi(name, age);
-giveMeObject(person);
+// giveMeObject(person);
+const human = new Human(name, age, gender);
+console.log(giveMeObject(human));
 
 export {};
