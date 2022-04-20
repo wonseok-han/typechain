@@ -4,5 +4,14 @@
   "main": "index.js",
   "repository": "https://github.com/wonseok-han/typechain.git",
   "author": "wonseok-han <oshan1112@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc-watch --onSuccess \" node dist/index.js \""
+  },
+  "devDependencies": {
+    "tsc-watch": "^5.0.3"
+  },
+  "dependencies": {
+    "typescript": "^4.6.3"
+  }
 }
